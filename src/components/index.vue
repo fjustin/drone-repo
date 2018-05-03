@@ -1,14 +1,16 @@
 <template>
-  <div id="howtouse">
-    <ul v-for="list in lists" style="list-style: none;">
-      <li>{{list.id}}. {{list.item}}</li>
-    </ul>
-  </div>
+  <item-list-one v-bind:links="links"></item-list-one>
 </template>
 
 <script>
+import Ch01 from '../components/ch01.vue'
+
 export default {
+  components: {
+    'item-list-one': Ch01
+  },
   name: 'HelloWorld',
+  props: ['links'],
   data () {
     return {
       lists: [
