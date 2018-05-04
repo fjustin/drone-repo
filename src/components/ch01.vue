@@ -1,6 +1,7 @@
 <template>
   <div id="item-list-one">
-    <h2>DJIアプリをダウンロードする</h2>
+    <h2>1. DJIアプリをダウンロードする</h2>
+      <img :src="image" alt="drone app image"></image>
       <p>下記リンクよりDJIのアプリをダウンロードする</p>
       <p v-for="link in links" v-bind:key="link">
         <a v-bind:href="link.src">{{ link.text }}</a>
@@ -15,7 +16,8 @@ export default {
       links: [
         {src: 'https://play.google.com/store/apps/details?id=dji.pilot&hl=ja', text: 'Androidはこちら'},
         {src: 'https://itunes.apple.com/jp/app/dji-go/id943780750?mt=8', text: 'iPhoneはこちら'}
-      ]
+      ],
+      image: require('../assets/dji-go.jpg')
     }
   }
 }
@@ -41,5 +43,10 @@ ul li, ol li {
 
 a {
   color: #42b983;
+}
+
+img{
+  width: auto;
+  height:100px;
 }
 </style>
