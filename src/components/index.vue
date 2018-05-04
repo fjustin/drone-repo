@@ -1,20 +1,24 @@
 <template>
-  <item-list-one v-bind:links="links"></item-list-one>
+  <div id="app">
+    <item-list-one v-bind:links="links"></item-list-one>
+    <item-list-two></item-list-two>
+  </div>
 </template>
 
 <script>
-import Ch01 from '../components/ch01.vue'
+import Ch01 from '../components/ch01.vue';
+import Ch02 from '../components/ch02.vue';
 
 export default {
   components: {
-    'item-list-one': Ch01
+    'item-list-one': Ch01,
+    'item-list-two': Ch02
   },
   name: 'HelloWorld',
   props: ['links'],
   data () {
     return {
       lists: [
-        {id: 1, item: 'DJIのアプリをダウンロードする'},
         {id: 2, item: 'スマートフォンからDJIアプリを起動し、DJIアカウントを作成する'},
         {id: 3, item: 'ドローンの一覧からPHAMTOM3を選択する'},
         {id: 4, item: 'ドローンのバッテリーとコントローラーの電源を入れる'},
