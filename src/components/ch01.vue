@@ -1,7 +1,7 @@
 <template>
   <div id="item-list-one">
     <h2>1. DJIアプリをダウンロードする</h2>
-      <img :src="image" alt="drone app image"></image>
+      <img :src="image" alt="drone app image">
       <p>下記リンクよりDJIのアプリをダウンロードする</p>
       <p v-for="link in links" v-bind:key="link">
         <a v-bind:href="link.src">{{ link.text }}</a>
