@@ -60,4 +60,34 @@ img{
   width: auto;
   height:100px;
 }
+
+/* ウィンドウ幅が0〜479pxの場合に適用するCSS */
+@media screen and ( max-width:479px )
+{
+  h1, h2 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  ul, ol {
+    color: #1e366a;
+    border: dotted #1e366a 1px;
+    padding: 0.5em 0.5em 0.5em 2em;
+  }
+
+  ul li, ol li {
+      line-height: 1.5;
+      padding: 0.5em 0;
+  }
+
+  a {
+    color: #42b983;
+  }
+
+  img{
+    width: auto;
+    height:100px;
+  }
+}
+
 </style>
