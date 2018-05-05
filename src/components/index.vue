@@ -28,9 +28,6 @@ export default {
   props: ['links'],
   data () {
     return {
-      lists: [
-        {id: 6, item: 'アプリ画面が緑色に切り替わったら、準備完了'}
-      ]
     }
   }
 }
