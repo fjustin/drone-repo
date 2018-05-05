@@ -13,14 +13,14 @@
 export default {
   data () {
     return {
-      youtube: '<iframe width="100%" height="315" src="https://www.youtube.com/embed/FQZkUnM5nw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+      youtube: '<iframe width="516" height="315" src="https://www.youtube.com/embed/FQZkUnM5nw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
 h2 {
   position: relative;
   padding: .25em 0 .5em .75em;
@@ -75,5 +75,18 @@ img{
     height:300px;
   }
 
+  .video {
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+  }
+
+  .video iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 </style>
