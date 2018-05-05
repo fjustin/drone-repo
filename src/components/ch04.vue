@@ -13,7 +13,7 @@
 export default {
   data () {
     return {
-      youtube: '<iframe width="560" height="315" src="https://www.youtube.com/embed/FQZkUnM5nw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+      youtube: '<iframe width="100%" height="315" src="https://www.youtube.com/embed/FQZkUnM5nw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
     }
   }
 }
@@ -73,21 +73,6 @@ img{
   img{
     width: auto;
     height:300px;
-  }
-
-  .video {
-    position: relative;
-    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
 
 }

@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       caribrate: require('../assets/DJIGO.png'),
-      caribratemovie: '<iframe width="560" height="315" src="https://www.youtube.com/embed/DHCDJKChXTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+      caribratemovie: '<iframe width="100%" height="315" src="https://www.youtube.com/embed/DHCDJKChXTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
     }
   }
 }
@@ -76,21 +76,6 @@ img{
   img{
     width: auto;
     height:100px;
-  }
-
-  .caribratemovie {
-    position: relative;
-    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
-    height: 0;
-    overflow: hidden;
-  }
-
-  .caribratemovie iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
 }
 </style>
