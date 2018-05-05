@@ -1,11 +1,11 @@
 <template>
-  <div id="item-list-one">
-    <h2>1. DJIアプリをダウンロードする</h2>
-      <img :src="image" alt="drone app image">
-      <p>下記リンクよりDJIのアプリをダウンロードする</p>
-      <p v-for="link in links" v-bind:key="link">
-        <a v-bind:href="link.src">{{ link.text }}</a>
-      </p>
+  <div id="inside">
+    <h2>Phantom 3を屋内飛行する上での注意点（ATTIモード）</h2>
+      <img :src="testimage">
+      <p>ATTIモードはGPSとビジョンポジショニングを使わないで、他のセンサーによって機体の姿勢制御を行うモードです。</p>
+      <p>DJI GOのアプリの下記の手順でATTIモードにすることができます。</p>
+      <p><span>DJI GO app > MCパラメータ設定 > アドバンス設定 > ビジョンポジショニング使用</span></p>
+      <p>ATTIモードを利用する際には、十分にテスト飛行を行う必要があります。</p>
   </div>
 </template>
 
@@ -13,11 +13,7 @@
 export default {
   data () {
     return {
-      links: [
-        {src: 'https://play.google.com/store/apps/details?id=dji.pilot&hl=ja', text: 'Androidはこちら'},
-        {src: 'https://itunes.apple.com/jp/app/dji-go/id943780750?mt=8', text: 'iPhoneはこちら'}
-      ],
-      image: require('../assets/dji-go.jpg')
+      testimage: require('../assets/phantom.png')
     }
   }
 }
@@ -28,7 +24,7 @@ export default {
 h2 {
   position: relative;
   padding: .25em 0 .5em .75em;
-  border-left: 6px solid #3498db;
+  border-left: 6px solid #FA5882;
 }
 h2::after {
   position: absolute;
@@ -56,9 +52,9 @@ a {
   color: #42b983;
 }
 
-img{
-  width: auto;
-  height:100px;
+span{
+  color: #666666;
+  border-bottom: dashed 1px #666666;
 }
 
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
@@ -86,7 +82,12 @@ img{
 
   img{
     width: auto;
-    height:100px;
+    height:250px;
   }
+}
+
+span{
+  color: #666666;
+  border-bottom: dashed 1px #666666;
 }
 </style>

@@ -5,6 +5,7 @@
     <item-list-three></item-list-three>
     <item-list-four></item-list-four>
     <item-list-five></item-list-five>
+    <inside></inside>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Ch02 from '../components/ch02.vue'
 import Ch03 from '../components/ch03.vue'
 import Ch04 from '../components/ch04.vue'
 import Ch05 from '../components/ch05.vue'
+import Inside from '../components/inside.vue'
 
 export default {
   components: {
@@ -21,8 +23,8 @@ export default {
     'item-list-two': Ch02,
     'item-list-three': Ch03,
     'item-list-four': Ch04,
-    'item-list-five': Ch05
-
+    'item-list-five': Ch05,
+    'inside': Inside
   },
   name: 'HelloWorld',
   props: ['links'],
