@@ -81,7 +81,7 @@ img{
 
   img{
     width: auto;
-    height:100px;
+    height:300px;
   }
 }
 </style>
