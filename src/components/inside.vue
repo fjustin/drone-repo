@@ -6,6 +6,11 @@
       <p>DJI GOのアプリの下記の手順でATTIモードにすることができます。</p>
       <p><span>DJI GO app > MCパラメータ設定 > アドバンス設定 > ビジョンポジショニング使用</span></p>
       <p>ATTIモードを利用する際には、十分にテスト飛行を行う必要があります。</p>
+    <div class="footer">
+      <div class="credit" style="color: white; font-size: 10px; font-weight: bold; position: absolute; bottom: 0; right: 0; margin-right: 10px;">
+        © 2018 Daiki Futami (Retty.inc).
+      </div>
+    </div>
   </div>
 </template>
 
@@ -55,6 +60,14 @@ a {
 span{
   color: #666666;
   border-bottom: dashed 1px #666666;
+}
+
+.footer{
+  position: relative;
+  width: auto;
+  height: 100px;
+  background-color: #000080;
+  margin-top: 100px;
 }
 
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
